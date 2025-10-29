@@ -1,0 +1,24 @@
+{
+  "Symbols": ["1", "0"],
+  "States": ["q0", "q1", "q2", "q3", "q4", "q5", "q6", "q7"],
+  "StartState": "q0",
+  "AcceptStates": ["q4", "q5", "q6", "q7"],
+  "Transitions": [
+    { "FromState": "q0", "Consume": "0", "ToState": "q0" },
+    { "FromState": "q0", "Consume": "1", "ToState": "q1" },
+    { "FromState": "q1", "Consume": "0", "ToState": "q3" },
+    { "FromState": "q1", "Consume": "1", "ToState": "q2" },
+    { "FromState": "q2", "Consume": "0", "ToState": "q6" },
+    { "FromState": "q2", "Consume": "1", "ToState": "q7" },
+    { "FromState": "q3", "Consume": "0", "ToState": "q4" },
+    { "FromState": "q3", "Consume": "1", "ToState": "q5" },
+    { "FromState": "q4", "Consume": "0", "ToState": "q0" },
+    { "FromState": "q4", "Consume": "1", "ToState": "q1" },
+    { "FromState": "q5", "Consume": "0", "ToState": "q3" },
+    { "FromState": "q5", "Consume": "1", "ToState": "q2" },
+    { "FromState": "q6", "Consume": "0", "ToState": "q4" },
+    { "FromState": "q6", "Consume": "1", "ToState": "q5" },
+    { "FromState": "q7", "Consume": "0", "ToState": "q6" },
+    { "FromState": "q7", "Consume": "1", "ToState": "q7" }
+  ]
+}
