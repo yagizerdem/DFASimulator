@@ -1,0 +1,108 @@
+{
+  "symbols": ["a", "b"],
+  "states": [
+    "q0,q1",
+    "q1,q2",
+    "q2",
+    "q0,q1,q2",
+    "q2,q3",
+    "q3",
+    "q1,q3",
+    "q1",
+    "q_dead"
+  ],
+  "startState": "q0,q1",
+  "finalStates": ["q0,q1", "q0,q1,q2"],
+  "transitions": [
+    {
+      "from": "q_dead",
+      "to": "q_dead",
+      "symbol": "a"
+    },
+    {
+      "from": "q_dead",
+      "to": "q_dead",
+      "symbol": "b"
+    },
+    {
+      "from": "q0,q1",
+      "to": "q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q0,q1",
+      "to": "q2",
+      "symbol": "b"
+    },
+    {
+      "from": "q1,q2",
+      "to": "q0,q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q1,q2",
+      "to": "q2,q3",
+      "symbol": "b"
+    },
+    {
+      "from": "q2",
+      "to": "q0,q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q2",
+      "to": "q3",
+      "symbol": "b"
+    },
+    {
+      "from": "q0,q1,q2",
+      "to": "q0,q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q0,q1,q2",
+      "to": "q2,q3",
+      "symbol": "b"
+    },
+    {
+      "from": "q2,q3",
+      "to": "q0,q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q2,q3",
+      "to": "q1,q3",
+      "symbol": "b"
+    },
+    {
+      "from": "q3",
+      "to": "-",
+      "symbol": "a"
+    },
+    {
+      "from": "q3",
+      "to": "q1",
+      "symbol": "b"
+    },
+    {
+      "from": "q1,q3",
+      "to": "q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q1,q3",
+      "to": "q1,q2",
+      "symbol": "b"
+    },
+    {
+      "from": "q1",
+      "to": "q1,q2",
+      "symbol": "a"
+    },
+    {
+      "from": "q1",
+      "to": "q2",
+      "symbol": "b"
+    }
+  ]
+}

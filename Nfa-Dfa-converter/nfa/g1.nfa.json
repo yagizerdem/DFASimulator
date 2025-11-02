@@ -1,0 +1,14 @@
+{
+  "symbols": ["0", "1", "eps"],
+  "states": ["q0", "q1", "q2"],
+  "startState": "q0",
+  "finalStates": ["q0"],
+  "transitions": [
+    { "from": "q0", "to": "q1", "consume": "1" },
+    { "from": "q0", "to": "q2", "consume": "eps" },
+    { "from": "q2", "to": "q0", "consume": "0" },
+    { "from": "q1", "to": "q1", "consume": "0" },
+    { "from": "q1", "to": "q2", "consume": "0" },
+    { "from": "q1", "to": "q2", "consume": "1" }
+  ]
+}
