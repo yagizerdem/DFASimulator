@@ -1,0 +1,1 @@
+{"terminals": ["0", "1"], "nonterminals": ["q0", "q1"], "productionrules": ["q0 -> 0q1 |1q0 | EPS", "q1 -> 0q0 |1q1 "], "startSymbol": "q0"}

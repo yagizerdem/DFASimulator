@@ -1,0 +1,1 @@
+{"terminals": ["1", "0"], "nonterminals": ["q0", "q1", "q2", "q3", "q4", "q5", "q6", "q7"], "productionrules": ["q0 -> 0q0 |1q1 ", "q1 -> 0q3 |1q2 ", "q2 -> 0q6 |1q7 ", "q3 -> 0q4 |1q5 ", "q4 -> 0q0 |1q1 | EPS", "q5 -> 0q3 |1q2 | EPS", "q6 -> 0q4 |1q5 | EPS", "q7 -> 0q6 |1q7 | EPS"], "startSymbol": "q0"}
